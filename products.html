@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Globenza Global Trade</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 20px;
+        }
+
+        .category.active {
+            background: #0B5A36;
+            color: white;
+            border-left: 5px solid #d4af37;
+        }
+
+        .category:hover {
+            transform: translateX(8px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg border-b border-yellow-600/30">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between h-32">
+
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="Globenza Global Trade" class="h-32 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-10">
+
+                    <a href="index.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Home</a>
+
+                    <a href="about.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">About</a>
+
+                    <a href="products.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Products</a>
+
+                    <a href="whyus.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Why Us</a>
+
+                    <a href="contact.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Contact</a>
+
+                </nav>
+
+                <!-- Right Side -->
+                <div class="flex items-center gap-4">
+
+                    <a href="contact.html"
+                        class="hidden lg:inline-flex bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full">
+                        Get Quote
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-btn" class="lg:hidden text-[#0B5A36] text-4xl font-bold">
+                        ☰
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="mobile-menu"
+        class="fixed top-0 -right-full w-80 h-screen bg-[#0B5A36] z-[9999] transition-all duration-500 shadow-2xl">
+
+        <div class="flex justify-between items-center p-6 border-b border-yellow-400/20">
+
+            <img src="images/logo1.png" class="h-14">
+
+            <!-- Close Button -->
+            <button id="close-menu" class="text-yellow-400 text-4xl font-bold">
+                ✕
+            </button>
+
+        </div>
+
+        <nav class="flex flex-col mt-6">
+
+            <a href="index.html" class="text-white px-8 py-4 hover:bg-white/10">Home</a>
+
+            <a href="about.html" class="text-white px-8 py-4 hover:bg-white/10">About</a>
+
+            <a href="products.html" class="text-white px-8 py-4 hover:bg-white/10">Products</a>
+
+            <a href="whyus.html" class="text-white px-8 py-4 hover:bg-white/10">Why Us</a>
+
+            <a href="gallery.html" class="text-white px-8 py-4 hover:bg-white/10">Gallery</a>
+
+            <a href="contact.html" class="text-white px-8 py-4 hover:bg-white/10">Contact</a>
+
+        </nav>
+
+        <div class="p-8">
+
+            <a href="contact.html"
+                class="block text-center bg-yellow-500 text-black py-3 rounded-full font-semibold hover:bg-yellow-400">
+
+                Get Quote
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- HERO -->
+    <section class="relative h-[80vh] flex items-center overflow-hidden">
+
+        <div class="absolute inset-0 bg-gradient-to-r from-[#052d1c]/95 via-[#0B5A36]/85 to-[#d4af37]/30">
+        </div>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+            <div class="max-w-3xl">
+
+                <span
+                    class="inline-block px-5 py-2 bg-[#d4af37]/20 border border-[#d4af37] rounded-full text-[#d4af37] uppercase tracking-[3px] text-sm">
+
+                    Premium Export Products
+
+                </span>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mt-6">
+
+                    Our Export
+                    <span class="text-[#d4af37]">
+                        Product Portfolio
+                    </span>
+
+                </h1>
+
+                <p class="text-lg text-gray-200 mt-8 leading-8 max-w-2xl">
+
+                    Globenza Global Trade supplies premium-quality agricultural,
+                    food, dairy, poultry, herbal and industrial products to
+                    international markets with strict quality standards,
+                    reliable sourcing and export-ready packaging.
+
+                </p>
+
+                <div class="flex flex-wrap gap-5 mt-10">
+
+                    <a href="#products"
+                        class="px-8 py-4 rounded-full bg-[#d4af37] text-black font-semibold hover:scale-105 transition">
+
+                        Explore Products
+
+                    </a>
+
+                    <a href="contact.html"
+                        class="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#0B5A36] transition">
+
+                        Request Catalogue
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PRODUCTS SECTION-->
+
+    <section id="products" class="py-24 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-4 gap-10">
+
+                <!--LEFT SIDEBAR-->
+
+                <div>
+
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden sticky top-28">
+
+                        <div class="bg-[#0B5A36] py-5 px-6">
+
+                            <h3 class="text-2xl font-bold text-white">
+
+                                Product Categories
+
+                            </h3>
+
+                        </div>
+
+                        <div class="divide-y">
+
+                            <button onclick="loadCategory('fruits')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+
+                                🍎 All Fruits & Vegetables
+
+                            </button>
+
+                            <button onclick="loadCategory('meat')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+
+                                🥩 Meat & Meat Products
+
+                            </button>
+
+                            <button onclick="loadCategory('poultry')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+
+                                🐔 Poultry Products
+
+                            </button>
+
+                            <button onclick="loadCategory('dairy')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🥛 Dairy Products
+                            </button>
+
+                            <button onclick="loadCategory('bakery')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🍪 Bakery Products
+                            </button>
+
+                            <button onclick="loadCategory('honey')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🍯 Honey, Jaggery & Sugar
+                            </button>
+
+                            <button onclick="loadCategory('cocoa')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+
+                                🍫 Cocoa & Chocolate Products
+
+                            </button>
+
+                            <button onclick="loadCategory('beverages')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🥤 Beverages
+                            </button>
+
+                            <button onclick="loadCategory('cereals')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🌾 Cereals
+                            </button>
+
+                            <button onclick="loadCategory('groundnuts')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🥜 Groundnuts
+                            </button>
+
+                            <button onclick="loadCategory('pickles')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🥒 Pickles & Papads
+                            </button>
+
+                            <button onclick="loadCategory('guargum')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🌿 Guar Gum
+                            </button>
+
+                            <button onclick="loadCategory('floriculture')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🌸 Floriculture
+                            </button>
+
+                            <button onclick="loadCategory('herbal')"
+                                class="category-btn w-full text-left px-6 py-4 hover:bg-[#0B5A36] hover:text-white transition">
+                                🌱 Herbal Plants
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE-->
+
+                <div class="lg:col-span-3">
+
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+
+                        <!-- Banner -->
+
+                        <img id="category-banner" src="pdt-img/fruits n vegetables.jpg"
+                            class="w-full h-72 object-cover">
+
+                        <!-- Content -->
+
+                        <div class="p-10">
+
+                            <span
+                                class="inline-block px-4 py-2 rounded-full bg-[#d4af37]/20 text-[#0B5A36] font-semibold">
+
+                                Category
+
+                            </span>
+
+                            <h2 id="category-title" class="text-4xl font-bold text-[#0B5A36] mt-5">
+
+                                All Fruits & Vegetables
+
+                            </h2>
+
+                            <p id="category-description" class="text-gray-600 leading-8 mt-6">
+                                We export premium quality fresh fruits and vegetables
+                                sourced directly from trusted Indian farms. Every
+                                product is carefully selected, hygienically packed
+                                and delivered according to international export
+                                standards.
+
+                            </p>
+
+                            <!-- Product Cards will come here -->
+
+                            <div id="product-list" class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+
+        const products = {
+
+            fruits: {
+
+                title: "All Fruits & Vegetables",
+
+                banner: "pdt-img/fruits n vegetables.jpg",
+
+                description: "We export premium quality fresh fruits and vegetables sourced directly from trusted Indian farms with international quality standards.",
+
+                items: [
+
+                    {
+                        name: "Fresh Mango",
+                        image: "pdt-img/mango.jpg",
+                        desc: "Premium Alphonso & Kesar Mangoes."
+                    },
+
+                    {
+                        name: "Fresh Pomegranate",
+                        image: "pdt-img/pomegranate.jpg",
+                        desc: "Juicy export quality pomegranates."
+                    },
+
+                    {
+                        name: "Fresh Onion",
+                        image: "pdt-img/onion.jpg",
+                        desc: "Fresh Indian Red Onion."
+                    },
+
+                    {
+                        name: "Fresh Potato",
+                        image: "pdt-img/potato..jpg",
+                        desc: "Premium export potatoes."
+                    },
+
+                    {
+                        name: "Fresh Garlic",
+                        image: "pdt-img/garlic.jpg",
+                        desc: "High quality garlic bulbs."
+                    },
+
+                    {
+                        name: "Fresh Tomato",
+                        image: "pdt-img/tomato.jpg",
+                        desc: "Naturally grown tomatoes."
+                    }
+
+                ]
+
+            },
+
+            meat: {
+
+                title: "Meat & Meat Products",
+
+                banner: "pdt-img/meat products.jpg",
+
+                description: "Globenza Global Trade exports premium quality halal processed meat products sourced from certified suppliers. Our products are hygienically processed, frozen, packed and exported according to international food safety standards.",
+
+                items: [
+
+                    {
+                        name: "Frozen Buffalo Meat",
+                        image: "pdt-img/buffalo-meat.jpg",
+                        desc: "Premium export quality frozen buffalo meat."
+                    },
+
+                    {
+                        name: "Frozen Goat Meat",
+                        image: "pdt-img/goat-meat.jpg",
+                        desc: "Fresh hygienically processed goat meat."
+                    },
+
+                    {
+                        name: "Frozen Lamb Meat",
+                        image: "pdt-img/lamb-meat.jpg",
+                        desc: "Tender export quality lamb meat."
+                    },
+
+                    {
+                        name: "Frozen Beef",
+                        image: "pdt-img/beef.jpg",
+                        desc: "Premium frozen beef for international markets."
+                    },
+
+                    {
+                        name: "Boneless Buffalo Meat",
+                        image: "pdt-img/boneless-buffalo.jpg",
+                        desc: "High-quality boneless frozen buffalo meat."
+                    },
+
+                    {
+                        name: "Buffalo Offals",
+                        image: "pdt-img/offals.jpg",
+                        desc: "Fresh frozen buffalo offals for export."
+                    }
+
+                ]
+
+            },
+
+            poultry: {
+
+                title: "Poultry & Poultry Products",
+
+                banner: "pdt-img/poultry.jpg",
+
+                description: "Globenza Global Trade exports premium quality poultry products processed under hygienic conditions. Our poultry products are sourced from certified farms and packed according to international food safety standards, ensuring freshness, quality, and reliable export supply.",
+
+                items: [
+
+                    {
+                        name: "Whole Chicken",
+                        image: "pdt-img/whole-chicken.jpg",
+                        desc: "Fresh frozen whole chicken processed under hygienic conditions."
+                    },
+
+                    {
+                        name: "Chicken Breast",
+                        image: "pdt-img/chicken-breast.jpg",
+                        desc: "Boneless premium chicken breast for export markets."
+                    },
+
+                    {
+                        name: "Chicken Drumsticks",
+                        image: "pdt-img/chicken-drumsticks.jpg",
+                        desc: "Tender frozen chicken drumsticks with export quality."
+                    },
+
+                    {
+                        name: "Chicken Wings",
+                        image: "pdt-img/chicken-wings.jpg",
+                        desc: "Fresh frozen chicken wings with international packaging."
+                    },
+
+                    {
+                        name: "Chicken Legs",
+                        image: "pdt-img/chicken-legs.jpg",
+                        desc: "Premium quality frozen chicken legs."
+                    },
+
+                    {
+                        name: "Fresh Eggs",
+                        image: "pdt-img/fresh-eggs.jpg",
+                        desc: "Farm fresh table eggs carefully packed for export."
+                    }
+
+                ]
+
+            },
+
+            dairy: {
+
+                title: "Dairy Products",
+
+                banner: "pdt-img/dairy.jpg",
+
+                description: "Globenza Global Trade exports premium quality dairy products sourced from trusted manufacturers. Our products are hygienically processed, packed, and supplied according to international food safety and export standards.",
+
+                items: [
+
+                    {
+                        name: "Pure Cow Ghee",
+                        image: "pdt-img/ghee.jpg",
+                        desc: "Premium quality pure cow ghee with rich aroma and taste.",
+                        link: "products/ghee.html"
+                    },
+
+                    {
+                        name: "Butter",
+                        image: "pdt-img/butter.jpg",
+                        desc: "Fresh creamy butter made from high-quality milk.",
+                        link: "products/butter.html"
+                    },
+
+                    {
+                        name: "Paneer",
+                        image: "pdt-img/paneer.jpg",
+                        desc: "Fresh soft paneer suitable for domestic and export markets.",
+                        link: "products/paneer.html"
+                    },
+
+                    {
+                        name: "Cheese",
+                        image: "pdt-img/cheese.jpg",
+                        desc: "Premium processed cheese with international quality.",
+                        link: "products/cheese.html"
+                    },
+
+                    {
+                        name: "Milk Powder",
+                        image: "pdt-img/milk-powder.jpg",
+                        desc: "High-quality skimmed and whole milk powder.",
+                        link: "products/milk-powder.html"
+                    },
+
+                    {
+                        name: "Flavoured Milk",
+                        image: "pdt-img/flavoured-milk.jpg",
+                        desc: "Delicious flavoured milk available in different varieties.",
+                        link: "products/flavoured-milk.html"
+                    }
+
+                ]
+
+            },
+
+            bakery: {
+
+                title: "Confectionery, Biscuits & Bakery Products",
+
+                banner: "pdt-img/bakery.jpg",
+
+                description: "Globenza Global Trade exports a wide range of premium bakery, confectionery and biscuit products manufactured under strict quality standards. Our products are hygienically packed, delicious in taste and suitable for international retail and wholesale markets.",
+
+                items: [
+
+                    {
+                        name: "Cookies",
+                        image: "pdt-img/cookies.jpg",
+                        desc: "Crunchy premium cookies available in various flavours.",
+                        link: "products/cookies.html"
+                    },
+
+                    {
+                        name: "Cream Biscuits",
+                        image: "pdt-img/cream-biscuits.jpg",
+                        desc: "Delicious cream-filled biscuits with international quality.",
+                        link: "products/cream-biscuits.html"
+                    },
+
+                    {
+                        name: "Rusk",
+                        image: "pdt-img/rusk.jpg",
+                        desc: "Crispy and crunchy premium tea rusk.",
+                        link: "products/rusk.html"
+                    },
+
+                    {
+                        name: "Cakes",
+                        image: "pdt-img/cakes.jpg",
+                        desc: "Soft and delicious bakery cakes available in multiple flavours.",
+                        link: "products/cakes.html"
+                    },
+
+                    {
+                        name: "Bread",
+                        image: "pdt-img/bread.jpg",
+                        desc: "Fresh bakery bread prepared under hygienic conditions.",
+                        link: "products/bread.html"
+                    },
+
+                    {
+                        name: "Chocolates & Candies",
+                        image: "pdt-img/candies.jpg",
+                        desc: "Premium assorted chocolates and confectionery products.",
+                        link: "products/chocolates-candies.html"
+                    }
+
+                ]
+
+            },
+
+            honey: {
+
+                title: "Honey, Jaggery & Sugar Products",
+
+                banner: "pdt-img/honey0.jpg",
+
+                description: "Globenza Global Trade offers premium-quality honey, jaggery, and sugar products sourced from trusted Indian producers. Our products are processed hygienically, packed securely, and exported according to international food safety and quality standards.",
+
+                items: [
+
+                    {
+                        name: "Natural Honey",
+                        image: "pdt-img/honey.jpg",
+                        desc: "100% pure natural honey with rich taste and nutritional value.",
+                        link: "products/natural-honey.html"
+                    },
+
+                    {
+                        name: "Organic Honey",
+                        image: "pdt-img/organic-honey.jpg",
+                        desc: "Premium organic honey collected from certified natural sources.",
+                        link: "products/organic-honey.html"
+                    },
+
+                    {
+                        name: "Jaggery Cubes",
+                        image: "pdt-img/jaggery-cubes.jpg",
+                        desc: "Natural jaggery cubes made from fresh sugarcane juice.",
+                        link: "products/jaggery-cubes.html"
+                    },
+
+                    {
+                        name: "Jaggery Powder",
+                        image: "pdt-img/jaggery-powder.jpg",
+                        desc: "Chemical-free jaggery powder ideal for healthy cooking.",
+                        link: "products/jaggery-powder.html"
+                    },
+
+                    {
+                        name: "Refined White Sugar",
+                        image: "pdt-img/white-sugar.png",
+                        desc: "Premium refined white sugar suitable for domestic and export markets.",
+                        link: "products/white-sugar.html"
+                    },
+
+                    {
+                        name: "Brown Sugar",
+                        image: "pdt-img/brown-sugar.jpg",
+                        desc: "Natural brown sugar with rich flavour and high quality.",
+                        link: "products/brown-sugar.html"
+                    }
+
+                ]
+
+            },
+
+            cocoa: {
+
+                title: "Cocoa & Its Products, Chocolates of All Kinds",
+
+                banner: "pdt-img/cocoa-banner.jpg",
+
+                description: "Globenza Global Trade exports premium-quality cocoa products and chocolates manufactured using high-quality ingredients. Our products are processed under strict hygiene standards, ensuring rich taste, freshness, and international export quality for retail and wholesale markets.",
+
+                items: [
+
+                    {
+                        name: "Natural Cocoa Powder",
+                        image: "pdt-img/cocoa-powder.jpg",
+                        desc: "Premium natural cocoa powder ideal for beverages, baking, and confectionery.",
+                        link: "products/cocoa-powder.html"
+                    },
+
+                    {
+                        name: "Dark Chocolate",
+                        image: "pdt-img/dark-chocolate.jpg",
+                        desc: "Rich dark chocolate with high cocoa content and premium taste.",
+                        link: "products/dark-chocolate.html"
+                    },
+
+                    {
+                        name: "Milk Chocolate",
+                        image: "pdt-img/milk-chocolate.jpg",
+                        desc: "Smooth and creamy milk chocolate made from premium ingredients.",
+                        link: "products/milk-chocolate.html"
+                    },
+
+                    {
+                        name: "Chocolate Bars",
+                        image: "pdt-img/chocolate-bars.jpg",
+                        desc: "Premium assorted chocolate bars available in multiple flavours.",
+                        link: "products/chocolate-bars.html"
+                    }
+
+                ]
+
+            },
+
+            beverages: {
+
+                title: "Alcoholic & Non-Alcoholic Beverages",
+
+                banner: "pdt-img/beverages.jpg",
+
+                description: "Globenza Global Trade offers a diverse range of premium alcoholic and non-alcoholic beverages sourced from trusted manufacturers. Our beverages are produced under strict quality standards, hygienically packed, and exported to meet international food safety regulations.",
+
+                items: [
+
+                    {
+                        name: "Fruit Juices",
+                        image: "pdt-img/fruit-juice.jpg",
+                        desc: "Premium quality fruit juices available in mango, orange, apple and mixed fruit flavours.",
+                        link: "products/fruit-juice.html"
+                    },
+
+                    {
+                        name: "Soft Drinks",
+                        image: "pdt-img/soft-drinks.jpg",
+                        desc: "Refreshing carbonated soft drinks in a variety of flavours.",
+                        link: "products/soft-drinks.html"
+                    },
+
+                    {
+                        name: "Energy Drinks",
+                        image: "pdt-img/energy-drinks.jpg",
+                        desc: "High-quality energy drinks designed for refreshment and performance.",
+                        link: "products/energy-drinks.html"
+                    },
+
+                    {
+                        name: "Mineral Water",
+                        image: "pdt-img/mineral-water.jpg",
+                        desc: "Pure packaged drinking water processed with international quality standards.",
+                        link: "products/mineral-water.html"
+                    },
+
+                    {
+                        name: "Tea & Coffee",
+                        image: "pdt-img/tea-coffee.jpg",
+                        desc: "Premium Indian tea and coffee sourced from renowned plantations.",
+                        link: "products/tea-coffee.html"
+                    },
+
+                    {
+                        name: "Wine & Spirits",
+                        image: "pdt-img/wine-spirits.jpg",
+                        desc: "Selected alcoholic beverages available for export where permitted by destination-country regulations.",
+                        link: "products/wine-spirits.html"
+                    }
+
+                ]
+
+            },
+
+            cereals: {
+
+                title: "Cereals & Cereal Products",
+
+                banner: "pdt-img/cereals-banner.jpg",
+
+                description: "Globenza Global Trade exports premium-quality cereals and cereal products sourced from trusted Indian farmers. Our cereals are carefully cleaned, processed, hygienically packed, and supplied according to international quality and food safety standards for global markets.",
+
+                items: [
+
+                    {
+                        name: "Basmati Rice",
+                        image: "pdt-img/basmati-rice.jpg",
+                        desc: "Premium long-grain aromatic Basmati rice with exceptional taste and quality.",
+                        link: "products/basmati-rice.html"
+                    },
+
+                    {
+                        name: "Non-Basmati Rice",
+                        image: "pdt-img/non-basmati-rice.jpg",
+                        desc: "High-quality non-basmati rice suitable for everyday consumption and export.",
+                        link: "products/non-basmati-rice.html"
+                    },
+
+                    {
+                        name: "Wheat",
+                        image: "pdt-img/wheat.jpg",
+                        desc: "Premium Indian wheat with high nutritional value and excellent milling quality.",
+                        link: "products/wheat.html"
+                    },
+
+                    {
+                        name: "Maize (Corn)",
+                        image: "pdt-img/maize.jpg",
+                        desc: "Export-quality yellow maize widely used for food and animal feed industries.",
+                        link: "products/maize.html"
+                    },
+
+                ]
+
+            },
+
+            groundnuts: {
+
+                title: "Groundnuts, Peanuts & Walnuts",
+
+                banner: "pdt-img/groundnuts-banner.jpg",
+
+                description: "Globenza Global Trade exports premium-quality groundnuts, peanuts, walnuts, and dry fruits sourced from trusted Indian growers. Our products are carefully cleaned, graded, hygienically packed, and supplied according to international food safety and export standards.",
+
+                items: [
+
+                    {
+                        name: "Raw Groundnuts",
+                        image: "pdt-img/raw-groundnuts.jpg",
+                        desc: "Premium quality raw groundnuts with high oil content for food processing and export.",
+                        link: "products/raw-groundnuts.html"
+                    },
+
+                    {
+                        name: "Peanut Kernels",
+                        image: "pdt-img/peanut-kernels.jpg",
+                        desc: "Machine-cleaned peanut kernels available in various grades and sizes.",
+                        link: "products/peanut-kernels.html"
+                    },
+
+                    {
+                        name: "Roasted Peanuts",
+                        image: "pdt-img/roasted-peanuts.jpg",
+                        desc: "Fresh roasted peanuts with excellent taste and crisp texture.",
+                        link: "products/roasted-peanuts.html"
+                    },
+
+                    {
+                        name: "Walnut Kernels",
+                        image: "pdt-img/walnut-kernels.jpg",
+                        desc: "Premium walnut kernels rich in nutrition and ideal for global markets.",
+                        link: "products/walnut-kernels.html"
+                    },
+
+                    {
+                        name: "Almonds",
+                        image: "pdt-img/almonds.jpg",
+                        desc: "High-quality almonds carefully selected and packed for export.",
+                        link: "products/almonds.html"
+                    },
+
+                    {
+                        name: "Cashew Nuts",
+                        image: "pdt-img/cashew-nuts.jpg",
+                        desc: "Premium-grade cashew nuts with superior taste and freshness.",
+                        link: "products/cashew-nuts.html"
+                    }
+
+                ]
+
+            },
+
+            pickles: {
+
+                title: "Pickles, Chutneys & Papads",
+
+                banner: "pdt-img/pickles-banner.jpg",
+
+                description: "Globenza Global Trade exports authentic Indian pickles, chutneys, and papads prepared using premium ingredients and traditional recipes. Our products are hygienically processed, securely packed, and meet international food safety and export quality standards.",
+
+                items: [
+
+                    {
+                        name: "Mango Pickle",
+                        image: "pdt-img/mango-pickle.jpg",
+                        desc: "Traditional Indian mango pickle prepared with premium spices and mustard oil.",
+                        link: "products/mango-pickle.html"
+                    },
+
+                    {
+                        name: "Mixed Vegetable Pickle",
+                        image: "pdt-img/mixed-pickle.jpg",
+                        desc: "A delicious blend of fresh vegetables and aromatic Indian spices.",
+                        link: "products/mixed-pickle.html"
+                    },
+
+                    {
+                        name: "Mint Chutney",
+                        image: "pdt-img/mint-chutney.jpg",
+                        desc: "Fresh mint chutney with authentic Indian flavor and natural ingredients.",
+                        link: "products/mint-chutney.html"
+                    },
+
+                    {
+                        name: "Papad",
+                        image: "pdt-img/papad.jpg",
+                        desc: "Premium crispy papads available in various flavors and sizes.",
+                        link: "products/papad.html"
+                    }
+
+                ]
+
+            },
+
+            guargum: {
+
+                title: "Guar Gum",
+
+                banner: "pdt-img/guar-gum-banner.jpg",
+
+                description: "Globenza Global Trade exports premium-quality Guar Gum products widely used in the food, pharmaceutical, textile, paper, cosmetics, oil drilling, and chemical industries. Our guar gum products are processed under strict quality standards and packed to meet international export requirements.",
+
+                items: [
+
+                    {
+                        name: "Guar Gum Powder",
+                        image: "pdt-img/guar-gum-powder.jpg",
+                        desc: "High-purity food-grade guar gum powder with excellent thickening and stabilizing properties.",
+                        link: "products/guar-gum-powder.html"
+                    },
+
+                   
+                    {
+                        name: "Fast Hydration Guar Gum",
+                        image: "pdt-img/fast-hydration-guar-gum.jpg",
+                        desc: "Fast hydration guar gum developed for oilfield and industrial applications.",
+                        link: "products/fast-hydration-guar-gum.html"
+                    },
+
+
+                ]
+
+            },
+
+            floriculture: {
+
+                title: "Floriculture & Floriculture Products",
+
+                banner: "pdt-img/floriculture-banner.jpg",
+
+                description: "Globenza Global Trade exports fresh flowers, ornamental plants, flower bulbs, foliage, and value-added floriculture products sourced from trusted Indian growers. Our products are carefully harvested, graded, packed, and shipped to maintain freshness and meet international quality standards.",
+
+                items: [
+
+                    {
+                        name: "Fresh Roses",
+                        image: "pdt-img/roses.jpg",
+                        desc: "Premium quality fresh roses available in multiple colors for export.",
+                        link: "products/fresh-roses.html"
+                    },
+
+                    {
+                        name: "Fresh Marigold Flowers",
+                        image: "pdt-img/marigold.jpg",
+                        desc: "Fresh marigold flowers ideal for decoration, festivals, and religious use.",
+                        link: "products/marigold.html"
+                    },
+
+                    {
+                        name: "Ornamental Plants",
+                        image: "pdt-img/ornamental-plants.jpg",
+                        desc: "Healthy ornamental plants suitable for landscaping and indoor decoration.",
+                        link: "products/ornamental-plants.html"
+                    },
+
+                    {
+                        name: "Flower Bulbs",
+                        image: "pdt-img/flower-bulbs.jpg",
+                        desc: "Premium flower bulbs with excellent germination and flowering quality.",
+                        link: "products/flower-bulbs.html"
+                    },
+
+                    {
+                        name: "Fresh Cut Flowers",
+                        image: "pdt-img/cut-flowers.jpg",
+                        desc: "Export-quality fresh cut flowers with long vase life and vibrant colors.",
+                        link: "products/cut-flowers.html"
+                    },
+
+
+                ]
+
+            },
+
+            herbal: {
+
+                title: "Herbal & Medicinal Plants",
+
+                banner: "pdt-img/herbal-banner.jpg",
+
+                description: "Globenza Global Trade exports premium-quality herbal and medicinal plants sourced from trusted Indian farms. Our products are naturally cultivated, carefully processed, hygienically packed, and supplied to pharmaceutical, nutraceutical, cosmetic, and wellness industries worldwide.",
+
+                items: [
+
+                    {
+                        name: "Ashwagandha",
+                        image: "pdt-img/ashwagandha.jpg",
+                        desc: "Premium quality Ashwagandha roots and powder widely used in Ayurvedic medicine.",
+                        link: "products/ashwagandha.html"
+                    },
+
+                    {
+                        name: "Aloe Vera",
+                        image: "pdt-img/aloe-vera.jpg",
+                        desc: "Fresh Aloe Vera leaves and gel suitable for cosmetic and healthcare applications.",
+                        link: "products/aloe-vera.html"
+                    },
+
+                    {
+                        name: "Moringa",
+                        image: "pdt-img/moringa.jpg",
+                        desc: "Nutrient-rich Moringa leaves, powder, and seeds for health and wellness.",
+                        link: "products/moringa.html"
+                    },
+
+                    {
+                        name: "Tulsi (Holy Basil)",
+                        image: "pdt-img/tulsi.jpg",
+                        desc: "Natural Tulsi leaves with excellent medicinal and therapeutic properties.",
+                        link: "products/tulsi.html"
+                    },
+
+                    {
+                        name: "Neem",
+                        image: "pdt-img/neem.jpg",
+                        desc: "Premium Neem leaves and extracts widely used in herbal and pharmaceutical products.",
+                        link: "products/neem.html"
+                    },
+
+                    {
+                        name: "Turmeric",
+                        image: "pdt-img/turmeric.jpg",
+                        desc: "High-curcumin turmeric fingers and powder with superior export quality.",
+                        link: "products/turmeric.html"
+                    }
+
+                ]
+
+            },
+
+        };
+
+        function loadCategory(category) {
+
+            const data = products[category];
+
+            document.querySelector("#category-title").innerHTML = data.title;
+            document.querySelector("#product-list").innerHTML = "";
+            document.getElementById("category-banner").src = data.banner;
+
+            document.getElementById("category-title").innerHTML = data.title;
+
+            document.getElementById("category-description").innerHTML = data.description;
+
+            data.items.forEach(product => {
+
+                document.querySelector("#product-list").innerHTML += `
+
+<div class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition duration-500 cursor-pointer">
+
+<img src="${product.image}"
+
+class="w-full h-56 object-cover group-hover:scale-110 transition duration-700">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold text-[#0B5A36]">
+
+${product.name}
+
+</h3>
+
+<p class="text-gray-600 mt-3">
+
+${product.desc}
+
+</p>
+
+<a href="tel:91 9115502045"
+class="inline-block mt-5 bg-[#0B5A36] text-white px-5 py-2 rounded-full hover:bg-[#d4af37] hover:text-black transition">
+
+Order Now
+
+</a>
+
+</div>
+
+</div>
+
+`;
+
+            });
+
+        }
+
+        loadCategory("fruits");
+
+
+    </script>
+
+
+    <!-- FINAL CTA SECTION-->
+    <section class="relative py-24 overflow-hidden">
+
+
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B5A36]/95 via-[#0B5A36]/85 to-[#d4af37]/70"></div>
+        </div>
+
+        <!-- Floating Circles -->
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-green-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[35px] p-10 lg:p-16 shadow-2xl">
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                    <!-- Left -->
+                    <div>
+
+                        <span
+                            class="inline-block px-5 py-2 rounded-full bg-[#d4af37]/20 text-[#d4af37] font-semibold tracking-wide">
+                            GLOBAL EXPORT PARTNER
+                        </span>
+
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mt-6 leading-tight">
+
+                            Ready to Import
+                            <span class="text-[#d4af37]">
+                                Premium Indian Products?
+                            </span>
+
+                        </h2>
+
+                        <p class="text-gray-200 mt-6 leading-8 text-lg">
+
+                            Globenza Global Trade supplies high-quality agricultural,
+                            food, herbal, dairy, floriculture, and FMCG products
+                            worldwide with reliable logistics, competitive pricing,
+                            and international quality standards.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+
+                        <div
+                            class="bg-white/10 rounded-2xl p-6 text-center hover:-translate-y-2 hover:bg-white/20 transition duration-500">
+
+                            <div class="text-5xl mb-4">🌍</div>
+
+                            <h4 class="text-white font-bold text-xl">
+                                Worldwide Export
+                            </h4>
+
+                            <p class="text-gray-200 mt-2 text-sm">
+                                Trusted international shipping network.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="bg-white/10 rounded-2xl p-6 text-center hover:-translate-y-2 hover:bg-white/20 transition duration-500">
+
+                            <div class="text-5xl mb-4">📦</div>
+
+                            <h4 class="text-white font-bold text-xl">
+                                Premium Quality
+                            </h4>
+
+                            <p class="text-gray-200 mt-2 text-sm">
+                                Carefully selected export-grade products.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="bg-white/10 rounded-2xl p-6 text-center hover:-translate-y-2 hover:bg-white/20 transition duration-500">
+
+                            <div class="text-5xl mb-4">🚚</div>
+
+                            <h4 class="text-white font-bold text-xl">
+                                Fast Delivery
+                            </h4>
+
+                            <p class="text-gray-200 mt-2 text-sm">
+                                Secure packaging and timely worldwide delivery.
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="bg-white/10 rounded-2xl p-6 text-center hover:-translate-y-2 hover:bg-white/20 transition duration-500">
+
+                            <div class="text-5xl mb-4">🤝</div>
+
+                            <h4 class="text-white font-bold text-xl">
+                                Trusted Partner
+                            </h4>
+
+                            <p class="text-gray-200 mt-2 text-sm">
+                                Dedicated support for global buyers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt-16 flex flex-wrap justify-center gap-6">
+
+                    <a href="contact.html"
+                        class="px-10 py-4 bg-[#d4af37] text-black rounded-full font-bold hover:scale-105 transition">
+
+                        Request a Quote
+
+                    </a>
+
+                    <a href="https://wa.me/919115502045" target="_blank"
+                        class="px-10 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-[#0B5A36] transition">
+
+                        Chat on WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!--Footer section -->
+    <footer class="relative bg-[#0b1a13] text-white overflow-hidden">
+
+        <!-- TOP BORDER LINE -->
+        <div class="h-1 bg-gradient-to-r from-[#0f2a1d] via-[#d4af37] to-[#0f2a1d]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+
+            <!-- BRAND -->
+            <div>
+                <h2 class="text-2xl font-bold text-[#d4af37]">
+                    GLOBENZA GLOBAL TRADE
+                </h2>
+
+                <p class="text-gray-400 mt-4 text-sm leading-relaxed">
+                    A trusted export-import company delivering premium agro, food, spices, and industrial products
+                    worldwide with quality assurance and reliability.
+                </p>
+
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-5">
+
+                    <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#d4af37] hover:text-black transition">
+                        f
+                    </a>
+
+                    <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#d4af37] hover:text-black transition">
+                        in
+                    </a>
+
+                    <a href="https://wa.me/9115502045"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-green-500 transition">
+                        wa
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Quick Links</h3>
+
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-[#d4af37] transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-[#d4af37] transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-[#d4af37] transition">About Us</a></li>
+                    <li><a href="whyus.html" class="hover:text-[#d4af37] transition">Why Choose Us</a></li>
+                    <li><a href="contact.html" class="hover:text-[#d4af37] transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- PRODUCTS -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Our Products</h3>
+
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li class="hover:text-white transition">Fruits & Vegetables</li>
+                    <li class="hover:text-white transition">Spices & Herbs</li>
+                    <li class="hover:text-white transition">Dairy Products</li>
+                    <li class="hover:text-white transition">Cereals & Grains</li>
+                    <li class="hover:text-white transition">Meat & Poultry</li>
+                    <li class="hover:text-white transition">Processed Foods</li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Contact Info</h3>
+
+                <div class="text-gray-400 text-sm space-y-3">
+
+                    <p>📍 Kapurthala, Punjab, India</p>
+
+                    <p>
+                        📞
+                        <a href="tel:9115502045" class="hover:text-[#d4af37] transition">
+                            9115502045
+                        </a>
+                    </p>
+
+                    <p>
+                        📧
+                        <a href="mailto:waraich.boy555@gmail.com" class="hover:text-[#d4af37] transition">
+                            Email Us
+                        </a>
+                    </p>
+
+                    <p class="text-gray-500 mt-4">
+                        GST: 03KWYPS0098Q1Z5
+                    </p>
+
+                    <p class="text-gray-500">
+                        IEC • FSSAI • APEDA • UDYAM Certified
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="border-t border-white/10 py-5 text-center text-gray-500 text-sm">
+            © 2026 GLOBENZA GLOBAL TRADE. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script>
+
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenu.style.right = "0";
+        });
+
+        closeBtn.addEventListener("click", function () {
+            mobileMenu.style.right = "-100%";
+        });
+
+    </script>
+
+</body>
+</html>

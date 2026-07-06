@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Globenza Global Trade</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 20px;
+        }
+
+        .category.active {
+            background: #0B5A36;
+            color: white;
+            border-left: 5px solid #d4af37;
+        }
+
+        .category:hover {
+            transform: translateX(8px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg border-b border-yellow-600/30">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex items-center justify-between h-32">
+
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="Globenza Global Trade" class="h-32 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-10">
+
+                    <a href="index.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Home</a>
+
+                    <a href="about.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">About</a>
+
+                    <a href="products.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Products</a>
+
+                    <a href="whyus.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Why Us</a>
+
+                    <a href="contact.html" class="text-[#0B5A36] hover:text-yellow-500 font-medium">Contact</a>
+
+                </nav>
+
+                <!-- Right Side -->
+                <div class="flex items-center gap-4">
+
+                    <a href="contact.html"
+                        class="hidden lg:inline-flex bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full">
+                        Get Quote
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="menu-btn" class="lg:hidden text-[#0B5A36] text-4xl font-bold">
+                        ☰
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="mobile-menu"
+        class="fixed top-0 -right-full w-80 h-screen bg-[#0B5A36] z-[9999] transition-all duration-500 shadow-2xl">
+
+        <div class="flex justify-between items-center p-6 border-b border-yellow-400/20">
+
+            <img src="images/logo1.png" class="h-14">
+
+            <!-- Close Button -->
+            <button id="close-menu" class="text-yellow-400 text-4xl font-bold">
+                ✕
+            </button>
+
+        </div>
+
+        <nav class="flex flex-col mt-6">
+
+            <a href="index.html" class="text-white px-8 py-4 hover:bg-white/10">Home</a>
+
+            <a href="about.html" class="text-white px-8 py-4 hover:bg-white/10">About</a>
+
+            <a href="products.html" class="text-white px-8 py-4 hover:bg-white/10">Products</a>
+
+            <a href="whyus.html" class="text-white px-8 py-4 hover:bg-white/10">Why Us</a>
+
+            <a href="gallery.html" class="text-white px-8 py-4 hover:bg-white/10">Gallery</a>
+
+            <a href="contact.html" class="text-white px-8 py-4 hover:bg-white/10">Contact</a>
+
+        </nav>
+
+        <div class="p-8">
+
+            <a href="contact.html"
+                class="block text-center bg-yellow-500 text-black py-3 rounded-full font-semibold hover:bg-yellow-400">
+
+                Get Quote
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!--CONTACT HERO SECTION-->
+    <section class="relative h-[75vh] flex items-center overflow-hidden">
+
+        <!-- Background -->
+        <div class="absolute inset-0">
+
+            <img src="cont-img/cont-hero.jpg" alt="Contact Globenza Global Trade" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-[#031B11]/95 via-[#0B5A36]/85 to-[#d4af37]/40"></div>
+
+        </div>
+
+        <!-- Floating Blur -->
+        <div class="absolute -top-20 left-10 w-72 h-72 bg-[#d4af37]/20 rounded-full blur-3xl animate-pulse"></div>
+
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+            <div class="max-w-3xl">
+
+                <span
+                    class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 text-[#d4af37] font-semibold">
+
+                    📞 Get In Touch With Us
+
+                </span>
+
+                <h1 class="mt-8 text-5xl md:text-7xl font-extrabold leading-tight text-white">
+
+                    Contact
+
+                    <span class="text-[#d4af37]">
+
+                        Globenza Global Trade
+
+                    </span>
+
+                </h1>
+
+                <p class="mt-8 text-lg md:text-xl text-gray-200 leading-9">
+
+                    Looking for a trusted export partner? Whether you need fresh
+                    agricultural products, processed foods, beverages, herbs,
+                    floriculture products or customized export solutions, our team
+                    is ready to assist you with reliable service and prompt
+                    communication.
+
+                </p>
+
+                <!-- Buttons -->
+
+                <div class="mt-10 flex flex-wrap gap-5">
+
+                    <a href="https://wa.me/919115502045" target="_blank"
+                        class="px-8 py-4 bg-green-500 rounded-full text-white font-bold hover:bg-green-600 hover:scale-105 transition duration-300">
+
+                        WhatsApp Us
+
+                    </a>
+
+                    <a href="mailto:info@globenzaglobaltrade.com"
+                        class="px-8 py-4 border-2 border-white rounded-full text-white font-bold hover:bg-white hover:text-[#0B5A36] transition duration-300">
+
+                        Send Email
+
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--CONTACT INFORMATION SECTION -->
+    <section class="py-24 bg-gradient-to-b from-black to-[#f8faf8]">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-16">
+
+                <span class="inline-block px-5 py-2 rounded-full bg-[#0B5A36]/10 text-[#0B5A36] font-semibold">
+
+                    CONTACT DETAILS
+
+                </span>
+
+                <h2 class="mt-6 text-4xl md:text-5xl font-extrabold text-[#0B5A36]">
+
+                    We're Always Ready To Help
+
+                </h2>
+
+                <p class="mt-6 text-gray-200 max-w-3xl mx-auto leading-8">
+
+                    Have questions about our products or export services? Contact
+                    our team today. We are committed to providing prompt responses,
+                    reliable support, and customized export solutions.
+
+                </p>
+
+            </div>
+
+            <!-- Contact Cards -->
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+                <!-- Phone -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        📞
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        Call Us
+
+                    </h3>
+
+                    <p class="text-center mt-5 text-gray-600 group-hover:text-gray-200">
+
+                        +91 91155 02045
+
+                    </p>
+
+                    <div class="text-center mt-6">
+
+                        <a href="tel:+919115502045"
+                            class="inline-block px-6 py-3 bg-[#d4af37] rounded-full font-semibold hover:scale-105 transition">
+
+                            Call Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        📧
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        Email Us
+
+                    </h3>
+
+                    <p class="text-center mt-5 text-gray-600 group-hover:text-gray-200 break-all">
+
+                        info@globenzaglobaltrade.com
+
+                    </p>
+
+                    <div class="text-center mt-6">
+
+                        <a href="mailto:info@globenzaglobaltrade.com"
+                            class="inline-block px-6 py-3 bg-[#d4af37] rounded-full font-semibold hover:scale-105 transition">
+
+                            Send Email
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- WhatsApp -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        💬
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        WhatsApp
+
+                    </h3>
+
+                    <p class="text-center mt-5 text-gray-600 group-hover:text-gray-200">
+
+                        Quick Business Support
+
+                    </p>
+
+                    <div class="text-center mt-6">
+
+                        <a href="https://wa.me/919115502045" target="_blank"
+                            class="inline-block px-6 py-3 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition">
+
+                            Chat Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Office Address -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        📍
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        Office Address
+
+                    </h3>
+
+                    <p class="text-center mt-5 text-gray-600 group-hover:text-gray-200 leading-7">
+
+                        161 Star City,<br>
+
+                        Opp. Rail Coach Factory,<br>
+
+                        Saido Bholana,<br>
+
+                        Punjab - 144620, India
+
+                    </p>
+
+                </div>
+
+                <!-- Business Hours -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        🕒
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        Working Hours
+
+                    </h3>
+
+                    <p class="text-center mt-5 text-gray-600 group-hover:text-gray-200">
+
+                        Monday - Saturday
+
+                        <br><br>
+
+                        9:00 AM - 7:00 PM
+
+                    </p>
+
+                </div>
+
+                <!-- Business Details -->
+
+                <div
+                    class="group bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:bg-[#0B5A36] transition duration-500">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center text-4xl mx-auto">
+
+                        📑
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-[#0B5A36] text-center mt-6 group-hover:text-white">
+
+                        Business Details
+
+                    </h3>
+
+                    <div class="mt-5 text-center text-gray-600 group-hover:text-gray-200 space-y-2">
+
+                        <p>GST Available</p>
+
+                        <p>IEC Certified</p>
+
+                        <p>FSSAI Registered</p>
+
+                        <p>APEDA Registered</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OFFICE LOCATION & GOOGLE MAP -->
+    <section class="py-24 bg-gradient-to-r from-[#031B11]/55 via-[#0B5A36]/75 to-[#d4af37]/40">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center mb-16">
+
+                <span class="inline-block px-5 py-2 rounded-full bg-[#0B5A36]/10 text-[#0B5A36] font-semibold">
+
+                    OUR LOCATION
+
+                </span>
+
+                <h2 class="text-5xl font-extrabold text-[#0B5A36] mt-6">
+
+                    Visit Our Office
+
+                </h2>
+
+                <p class="mt-6 text-gray-200 max-w-3xl mx-auto leading-8">
+
+                    We welcome importers, distributors, wholesalers and business
+                    partners from around the world. Reach us through phone,
+                    email or visit our office.
+
+                </p>
+
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Office Card -->
+
+                <div class="bg-white rounded-3xl shadow-2xl p-10 hover:-translate-y-2 transition duration-500">
+
+                    <h3 class="text-3xl font-bold text-[#0B5A36]">
+
+                        Globenza Global Trade
+
+                    </h3>
+
+                    <div class="space-y-8 mt-10">
+
+                        <div class="flex items-start gap-5">
+
+                            <div class="w-14 h-14 rounded-full bg-[#d4af37] flex items-center justify-center text-2xl">
+
+                                📍
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-xl">
+
+                                    Office Address
+
+                                </h4>
+
+                                <p class="text-gray-600 mt-2">
+
+                                    161 Star City,
+                                    Opp. Rail Coach Factory,
+                                    Saido Bholana,
+                                    Punjab – 144620,
+                                    India
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start gap-5">
+
+                            <div class="w-14 h-14 rounded-full bg-[#d4af37] flex items-center justify-center text-2xl">
+
+                                📞
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-xl">
+
+                                    Phone
+
+                                </h4>
+
+                                <a href="tel:+919115502045" class="text-[#0B5A36] hover:text-[#d4af37]">
+
+                                    +91 91155 02045
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start gap-5">
+
+                            <div class="w-14 h-14 rounded-full bg-[#d4af37] flex items-center justify-center text-2xl">
+
+                                📧
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-xl">
+
+                                    Email
+
+                                </h4>
+
+                                <a href="mailto:info@globenzaglobaltrade.com"
+                                    class="text-[#0B5A36] hover:text-[#d4af37] break-all">
+
+                                    info@globenzaglobaltrade.com
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start gap-5">
+
+                            <div class="w-14 h-14 rounded-full bg-[#d4af37] flex items-center justify-center text-2xl">
+
+                                🕒
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-xl">
+
+                                    Working Hours
+
+                                </h4>
+
+                                <p class="text-gray-600">
+
+                                    Monday - Saturday
+
+                                    <br>
+
+                                    9:00 AM – 7:00 PM
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-4 mt-10">
+
+                        <a href="https://wa.me/919115502045" target="_blank"
+                            class="px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+
+                            WhatsApp
+
+                        </a>
+
+                        <a href="tel:+919115502045"
+                            class="px-6 py-3 bg-[#0B5A36] text-white rounded-full hover:bg-[#08452a] transition">
+
+                            Call Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Google Map -->
+
+                <div class="overflow-hidden rounded-3xl shadow-2xl">
+
+                    <iframe src="https://www.google.com/maps?q=Rail+Coach+Factory+Kapurthala+Punjab&output=embed"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Contact section-->
+    <section class="relative py-24 text-white overflow-hidden">
+
+        <!-- BACKGROUND IMAGE -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-[#0f2a1d]/85"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- HEADER -->
+            <div class="text-center mb-12 md:mb-16">
+
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                    Contact Globenza Global Trade
+                </h2>
+
+                <p class="text-gray-300 mt-4 text-base sm:text-lg max-w-3xl mx-auto">
+                    Let’s connect for domestic & international export business opportunities
+                </p>
+
+            </div>
+
+            <!-- GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+                <!-- LEFT INFO CARD -->
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[30px] p-6 sm:p-8 lg:p-10 space-y-5 hover:border-[#d4af37] transition">
+
+
+                    <div
+                        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[28px] p-5 sm:p-7 lg:p-8 shadow-2xl">
+
+                        <div class="space-y-5">
+
+                            <!-- Contact Person -->
+                            <div class="flex items-start gap-3 sm:gap-4 group">
+                                <div
+                                    class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 rounded-full bg-[#d4af37] text-[#0B5A36] flex items-center justify-center text-xl group-hover:scale-110 transition">
+                                    <i class="fas fa-user"></i>
+                                </div>
+
+                                <div>
+                                    <p class="text-gray-400 text-sm uppercase tracking-wider">Contact Person</p>
+                                    <h4 class="text-white text-lg font-semibold">
+                                        Mr. Gurinder Singh
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-3 sm:gap-4 group">
+                                <div
+                                    class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 rounded-full bg-[#d4af37] text-[#0B5A36] flex items-center justify-center text-xl group-hover:scale-110 transition">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+
+                                <div>
+                                    <p class="text-gray-400 text-sm uppercase tracking-wider">Phone Number</p>
+                                    <a href="tel:9115502045"
+                                        class="text-white hover:text-[#d4af37] text-lg text-sm sm:text-base font-medium transition">
+                                        +91 91155 02045
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-3 sm:gap-4 group">
+                                <div
+                                    class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 rounded-full bg-[#d4af37] text-[#0B5A36] flex items-center justify-center text-xl group-hover:scale-110 transition">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <p class="text-gray-400 text-sm uppercase tracking-wider">Email Address</p>
+                                    <a href="mailto:waraich.boy555@gmail.com"
+                                        class="text-white hover:text-[#d4af37] break-words text-sm sm:text-base transition">
+                                        waraich.boy555@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-start gap-3 sm:gap-4 group">
+                                <div
+                                    class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 rounded-full bg-[#d4af37] text-[#0B5A36] flex items-center justify-center text-xl group-hover:scale-110 transition">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+
+                                <div>
+                                    <p class="text-gray-400 text-sm  uppercase tracking-wider">Office Address</p>
+                                    <p class="text-white text-sm sm:text-base leading-7">
+                                        161 Star City,<br>
+                                        Opposite Rail Coach Factory,<br>
+                                        Saido Bholana, PO: Bhulana,<br>
+                                        Punjab - 144620, India
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- GST -->
+                            <div class="flex items-start gap-3 sm:gap-4 group">
+                                <div
+                                    class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 rounded-full bg-[#d4af37] text-[#0B5A36] flex items-center justify-center text-xl group-hover:scale-110 transition">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
+
+                                <div>
+                                    <p class="text-gray-400 text-sm uppercase tracking-wider">GSTIN</p>
+                                    <h4 class="text-white text-base sm:text-lg font-semibold tracking-wider break-all">
+                                        03KWYPS0098Q1Z5
+                                    </h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- WHATSAPP BUTTON -->
+                    <a href="https://wa.me/9115502045"
+                        class="block w-full sm:w-fit text-center mt-6 px-6 py-3 bg-green-500 rounded-full font-semibold hover:bg-green-600 hover:scale-105 transition">
+                        Chat on WhatsApp
+                    </a>
+
+                </div>
+
+                <!-- RIGHT CONTACT FORM -->
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[30px] p-6 sm:p-8 lg:p-10 hover:border-[#d4af37] transition">
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-[#d4af37]">
+                        Send Your Inquiry
+                    </h3>
+
+                    <form class="space-y-4">
+
+                        <input type="text" placeholder="Your Name"
+                            class="w-full px-5 py-4 rounded-lg bg-white/20 border border-white/30 placeholder-gray-200 focus:outline-none focus:border-[#d4af37] transition"
+                            required>
+
+                        <input type="email" placeholder="Your Email"
+                            class="w-full px-5 py-4 rounded-lg bg-white/20 border border-white/30 placeholder-gray-200 focus:outline-none focus:border-[#d4af37] transition"
+                            required>
+
+                        <input type="tel" placeholder="Mobile Number"
+                            class="w-full px-5 py-4 rounded-lg bg-white/20 border border-white/30 placeholder-gray-200 focus:outline-none focus:border-[#d4af37] transition"
+                            required>
+
+                        <textarea rows="4" placeholder="Your Requirement"
+                            class="w-full px-5 py-4 rounded-lg bg-white/20 border border-white/30 placeholder-gray-200 focus:outline-none focus:border-[#d4af37] transition"
+                            required></textarea>
+
+                        <button type="submit"
+                            class="w-full py-4 bg-[#d4af37] text-black font-semibold rounded-lg hover:bg-white hover:text-black hover:scale-105 transition">
+                            Submit Inquiry
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Footer section -->
+    <footer class="relative bg-[#0b1a13] text-white overflow-hidden">
+
+        <!-- TOP BORDER LINE -->
+        <div class="h-1 bg-gradient-to-r from-[#0f2a1d] via-[#d4af37] to-[#0f2a1d]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+
+            <!-- BRAND -->
+            <div>
+                <h2 class="text-2xl font-bold text-[#d4af37]">
+                    GLOBENZA GLOBAL TRADE
+                </h2>
+
+                <p class="text-gray-400 mt-4 text-sm leading-relaxed">
+                    A trusted export-import company delivering premium agro, food, spices, and industrial products
+                    worldwide with quality assurance and reliability.
+                </p>
+
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-5">
+
+                    <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#d4af37] hover:text-black transition">
+                        f
+                    </a>
+
+                    <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#d4af37] hover:text-black transition">
+                        in
+                    </a>
+
+                    <a href="https://wa.me/9115502045"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-green-500 transition">
+                        wa
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Quick Links</h3>
+
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-[#d4af37] transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-[#d4af37] transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-[#d4af37] transition">About Us</a></li>
+                    <li><a href="whyus.html" class="hover:text-[#d4af37] transition">Why Choose Us</a></li>
+                    <li><a href="contact.html" class="hover:text-[#d4af37] transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- PRODUCTS -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Our Products</h3>
+
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li class="hover:text-white transition">Fruits & Vegetables</li>
+                    <li class="hover:text-white transition">Spices & Herbs</li>
+                    <li class="hover:text-white transition">Dairy Products</li>
+                    <li class="hover:text-white transition">Cereals & Grains</li>
+                    <li class="hover:text-white transition">Meat & Poultry</li>
+                    <li class="hover:text-white transition">Processed Foods</li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#d4af37] mb-4">Contact Info</h3>
+
+                <div class="text-gray-400 text-sm space-y-3">
+
+                    <p>📍 Kapurthala, Punjab, India</p>
+
+                    <p>
+                        📞
+                        <a href="tel:9115502045" class="hover:text-[#d4af37] transition">
+                            9115502045
+                        </a>
+                    </p>
+
+                    <p>
+                        📧
+                        <a href="mailto:waraich.boy555@gmail.com" class="hover:text-[#d4af37] transition">
+                            Email Us
+                        </a>
+                    </p>
+
+                    <p class="text-gray-500 mt-4">
+                        GST: 03KWYPS0098Q1Z5
+                    </p>
+
+                    <p class="text-gray-500">
+                        IEC • FSSAI • APEDA • UDYAM Certified
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="border-t border-white/10 py-5 text-center text-gray-500 text-sm">
+            © 2026 GLOBENZA GLOBAL TRADE. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script>
+
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenu.style.right = "0";
+        });
+
+        closeBtn.addEventListener("click", function () {
+            mobileMenu.style.right = "-100%";
+        });
+
+    </script>
+
+</body>
+
+</html>
